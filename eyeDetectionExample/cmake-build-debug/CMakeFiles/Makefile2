@@ -44,10 +44,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/marc/Dropbox/05_School/04_FHGR/21_Bildverarbeitung1/clion/eyeDetection
+CMAKE_SOURCE_DIR = /Users/marc/Documents/GitHub/eyecatcher/eyeDetectionExample
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/marc/Dropbox/05_School/04_FHGR/21_Bildverarbeitung1/clion/eyeDetection/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/marc/Documents/GitHub/eyecatcher/eyeDetectionExample/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ preinstall:
 CMakeFiles/eyeDetection.dir/all:
 	$(MAKE) -f CMakeFiles/eyeDetection.dir/build.make CMakeFiles/eyeDetection.dir/depend
 	$(MAKE) -f CMakeFiles/eyeDetection.dir/build.make CMakeFiles/eyeDetection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/marc/Dropbox/05_School/04_FHGR/21_Bildverarbeitung1/clion/eyeDetection/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target eyeDetection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/marc/Documents/GitHub/eyecatcher/eyeDetectionExample/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target eyeDetection"
 .PHONY : CMakeFiles/eyeDetection.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/eyeDetection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marc/Dropbox/05_School/04_FHGR/21_Bildverarbeitung1/clion/eyeDetection/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marc/Documents/GitHub/eyecatcher/eyeDetectionExample/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/eyeDetection.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marc/Dropbox/05_School/04_FHGR/21_Bildverarbeitung1/clion/eyeDetection/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marc/Documents/GitHub/eyecatcher/eyeDetectionExample/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/eyeDetection.dir/rule
 
 # Convenience name for target.

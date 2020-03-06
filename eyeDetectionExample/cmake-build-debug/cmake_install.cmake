@@ -1,4 +1,4 @@
-# Install script for directory: /Users/marc/Dropbox/05_School/04_FHGR/21_Bildverarbeitung1/clion/eyeDetection
+# Install script for directory: /Users/marc/Documents/GitHub/eyecatcher/eyeDetectionExample
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/marc/Dropbox/05_School/04_FHGR/21_Bildverarbeitung1/clion/eyeDetection/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/marc/Documents/GitHub/eyecatcher/eyeDetectionExample/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
