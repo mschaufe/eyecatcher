@@ -1,2 +1,2 @@
-# eyecatcher
+# Eyecatcher
 Eyecatcher 
