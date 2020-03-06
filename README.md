@@ -1,6 +1,8 @@
 # Eyecatcher
 Eyecatcher 
 
-<br><img align="left" width="300" height="300" src="https://giphy.com/gifs/the-lord-of-rings-fellowship-ring-return-king-ttwuFsq65wqmQ">
+I see you!
+<br><img align="left" width="300" height="300" src="https://raw.githubusercontent.com/mschaufe/eyecatcher/master/data/eye.gif">
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br>
+by Jannis & Marc
