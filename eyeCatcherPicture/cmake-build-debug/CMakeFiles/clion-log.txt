@@ -404,7 +404,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:1 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found OpenCV: /usr/local (found version "3.4.9") 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/cmake-build-debug
