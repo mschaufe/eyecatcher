@@ -9,7 +9,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84b362c8-c87f-44dc-bc0f-bcb3a6aec043" name="Default Changelist" comment="" />
+    <list default="true" id="84b362c8-c87f-44dc-bc0f-bcb3a6aec043" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eyeDetectionVideo/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/eyeDetectionVideo/CMakeLists.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +54,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/eyeDetectionVideo" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -66,6 +74,7 @@
       <workItem from="1583565280933" duration="1103000" />
       <workItem from="1584004902386" duration="750000" />
       <workItem from="1584005883155" duration="211000" />
+      <workItem from="1584006162257" duration="75000" />
     </task>
     <task id="LOCAL-00001" summary="add eyeDetection example">
       <created>1583471379252</created>
@@ -242,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584006057732</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="rename eyeDetection">
+      <created>1584006185342</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1584006185342</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,13 +310,14 @@
     <MESSAGE value="versuch 1.2" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="rename" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename" />
+    <MESSAGE value="rename eyeDetection" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename eyeDetection" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="42" key="CommitChangelistDialog2" timestamp="1584006057584">
+    <state x="421" y="42" key="CommitChangelistDialog2" timestamp="1584006184727">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="421" y="42" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584006057584" />
+    <state x="421" y="42" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584006184727" />
     <state width="1638" height="61" key="GridCell.Tab.0.bottom" timestamp="1584005863326">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -333,10 +350,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1583501858786" />
-    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1584006060645">
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1584006187669">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1584006060645" />
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1584006187669" />
     <state x="622" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584005945350">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
