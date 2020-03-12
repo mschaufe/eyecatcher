@@ -10,11 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84b362c8-c87f-44dc-bc0f-bcb3a6aec043" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/eyecatcher.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
       <workItem from="1583565280933" duration="1103000" />
       <workItem from="1584004902386" duration="750000" />
       <workItem from="1584005883155" duration="211000" />
-      <workItem from="1584006162257" duration="329000" />
+      <workItem from="1584006162257" duration="390000" />
     </task>
     <task id="LOCAL-00001" summary="add eyeDetection example">
       <created>1583471379252</created>
@@ -275,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584006391788</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="cleaning up">
+      <created>1584006510047</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1584006510047</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,10 +335,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="cleaning up" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="42" key="CommitChangelistDialog2" timestamp="1584006391611">
+    <state x="421" y="42" key="CommitChangelistDialog2" timestamp="1584006509882">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="421" y="42" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584006391611" />
+    <state x="421" y="42" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584006509882" />
     <state width="1638" height="61" key="GridCell.Tab.0.bottom" timestamp="1584005863326">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -368,10 +371,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1583501858786" />
-    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1584006395810">
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1584006516012">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1584006395810" />
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1584006516012" />
     <state x="622" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584006409690">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
