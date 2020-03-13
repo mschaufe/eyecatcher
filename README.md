@@ -6,5 +6,3 @@ I see you!
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br>
 by Jannis & Marc
-
-Hallo Welt!
