@@ -2,19 +2,16 @@
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include <iostream>
-#include <stdio.h>
+#include <cmath>
 
 
 int main(int argc, char** argv){
     // Load Pictures
     cv::Mat image;
     cv::Mat image_gray;
-    image = cv::imread(argv[1], cv::IMREAD_COLOR);
-
-    int width = 200,
-        height = 200;
-
     cv::Mat auge;
+
+    image = cv::imread(argv[1], cv::IMREAD_COLOR);
 
 
     // Load filters
@@ -47,11 +44,44 @@ int main(int argc, char** argv){
             // show eyes in picture separately
             auge = image_gray(cv::Rect(eye_center.x-radius, eye_center.y-radius/2, 2*radius, radius));
             std::string filename = "Auge_" + std::to_string(j);
-            imshow( filename, auge );
+            cv::imshow( filename, auge );
         }
     }
 
-    imshow( "Detected Face", image );
+    cv::imshow( "Detected Face", image );
+
+
+    // Invert the source image and convert to grayscale
+    cv::Mat gray;
+    cv::cvtColor(~auge, gray, CV_BGR2GRAY);
+
+    // Convert to binary image by thresholding it
+    cv::threshold(gray, gray, 220, 255, cv::THRESH_BINARY);
+
+    // Find all contours
+    std::vector<std::vector<cv::Point> > contours;
+    cv::findContours(gray.clone(), contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
+
+    // Fill holes in each contour
+    cv::drawContours(gray, contours, -1, CV_RGB(255,255,255), -1);
+
+    for (int i = 0; i < contours.size(); i++)
+    {
+        double area = cv::contourArea(contours[i]);
+        cv::Rect rect = cv::boundingRect(contours[i]);
+        int radius = rect.width/2;
+
+        // If contour is big enough and has round shape
+        // Then it is the pupil
+        if (area >= 30 &&
+            std::abs(1 - ((double)rect.width / (double)rect.height)) <= 0.2 &&
+            std::abs(1 - (area / (CV_PI * std::pow(radius, 2)))) <= 0.2)
+        {
+            cv::circle(auge, cv::Point(rect.x + radius, rect.y + radius), radius, CV_RGB(255,0,0), 2);
+        }
+    }
+
+    cv::imshow("imagne", auge);
 
     cv::waitKey(0);
     return 0;

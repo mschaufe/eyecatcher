@@ -6,14 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/main.cpp
-opencv2/objdetect/objdetect.hpp
-/Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/opencv2/objdetect/objdetect.hpp
-opencv2/highgui/highgui.hpp
-/Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/opencv2/highgui/highgui.hpp
+/Users/marc/Documents/GitHub/eyecatcher/pupilDetect/main.cpp
 opencv2/imgproc/imgproc.hpp
-/Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/opencv2/imgproc/imgproc.hpp
-iostream
+-
+opencv2/highgui/highgui.hpp
 -
 cmath
 -
@@ -947,10 +943,6 @@ opencv2/core.hpp
 -
 vector
 -
-
-/usr/local/include/opencv2/objdetect/objdetect.hpp
-opencv2/objdetect.hpp
-/usr/local/include/opencv2/objdetect/opencv2/objdetect.hpp
 
 /usr/local/include/opencv2/objdetect/objdetect_c.h
 opencv2/core/core_c.h
