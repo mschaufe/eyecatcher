@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "../bin/eyeLike"
   "../bin/eyeLike.pdb"
   "CMakeFiles/eyeLike.dir/findEyeCenter.cpp.o"
-  "CMakeFiles/eyeLike.dir/findEyeCorner.cpp.o"
   "CMakeFiles/eyeLike.dir/helpers.cpp.o"
   "CMakeFiles/eyeLike.dir/main.cpp.o"
 )

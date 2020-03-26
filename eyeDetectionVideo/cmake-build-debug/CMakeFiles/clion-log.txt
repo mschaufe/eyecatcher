@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/marc/Documents/GitHub/FHGR/Bildverarbeitung/eyeDetectionVideo
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/janis/switchdrive/Private/Github/eyeDetectionVideo
 CMake Warning (dev) at /usr/local/share/OpenCV/OpenCVModules.cmake:53 (add_library):
   ADD_LIBRARY called with SHARED option but the target platform does not
   support dynamic linking.  Building a STATIC library instead.  This may lead
@@ -404,7 +404,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:1 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found OpenCV: /usr/local (found version "3.4.9") 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/marc/Documents/GitHub/FHGR/Bildverarbeitung/eyeDetectionVideo/cmake-build-debug
+-- Build files have been written to: /Users/janis/switchdrive/Private/Github/eyeDetectionVideo/cmake-build-debug

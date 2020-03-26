@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/main.cpp" "/Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/cmake-build-debug/CMakeFiles/eyeDetectionPicture.dir/main.cpp.o"
+  "/Users/janis/switchdrive/Private/Github/eyeCatcherPicture/main.cpp" "/Users/janis/switchdrive/Private/Github/eyeCatcherPicture/cmake-build-debug/CMakeFiles/eyeDetectionPicture.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

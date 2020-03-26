@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/main.cpp
+/Users/janis/switchdrive/Private/Github/eyeCatcherPicture/main.cpp
 opencv2/objdetect/objdetect.hpp
-/Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/opencv2/objdetect/objdetect.hpp
+/Users/janis/switchdrive/Private/Github/eyeCatcherPicture/opencv2/objdetect/objdetect.hpp
 opencv2/highgui/highgui.hpp
-/Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/opencv2/highgui/highgui.hpp
+/Users/janis/switchdrive/Private/Github/eyeCatcherPicture/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/Users/marc/Documents/GitHub/eyecatcher/eyeCatcherPicture/opencv2/imgproc/imgproc.hpp
+/Users/janis/switchdrive/Private/Github/eyeCatcherPicture/opencv2/imgproc/imgproc.hpp
 iostream
 -
 cmath

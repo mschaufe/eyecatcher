@@ -1,10 +1,6 @@
-#include "opencv2/objdetect/objdetect.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 
-//#include <mgl2/mgl.h>
-
-#include <iostream>
 #include <queue>
 #include <stdio.h>
 
@@ -13,36 +9,6 @@
 
 // Pre-declarations
 cv::Mat floodKillEdges(cv::Mat &mat);
-
-#pragma mark Visualization
-/*
-template<typename T> mglData *matToData(const cv::Mat &mat) {
-  mglData *data = new mglData(mat.cols,mat.rows);
-  for (int y = 0; y < mat.rows; ++y) {
-    const T *Mr = mat.ptr<T>(y);
-    for (int x = 0; x < mat.cols; ++x) {
-      data->Put(((mreal)Mr[x]),x,y);
-    }
-  }
-  return data;
-}
-
-void plotVecField(const cv::Mat &gradientX, const cv::Mat &gradientY, const cv::Mat &img) {
-  mglData *xData = matToData<double>(gradientX);
-  mglData *yData = matToData<double>(gradientY);
-  mglData *imgData = matToData<float>(img);
-  
-  mglGraph gr(0,gradientX.cols * 20, gradientY.rows * 20);
-  gr.Vect(*xData, *yData);
-  gr.Mesh(*imgData);
-  gr.WriteFrame("vecField.png");
-  
-  delete xData;
-  delete yData;
-  delete imgData;
-}*/
-
-#pragma mark Helpers
 
 cv::Point unscalePoint(cv::Point p, cv::Rect origSize) {
   float ratio = (((float)kFastEyeWidth)/origSize.width);
