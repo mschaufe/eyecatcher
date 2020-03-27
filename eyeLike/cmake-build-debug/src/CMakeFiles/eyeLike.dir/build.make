@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/janis/switchdrive/Private/Github/eyeLike
+CMAKE_SOURCE_DIR = /Users/marc/Documents/GitHub/eyecatcher/eyeLike
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/eyeLike.dir/depend.make
@@ -59,42 +59,42 @@ include src/CMakeFiles/eyeLike.dir/flags.make
 
 src/CMakeFiles/eyeLike.dir/main.cpp.o: src/CMakeFiles/eyeLike.dir/flags.make
 src/CMakeFiles/eyeLike.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/eyeLike.dir/main.cpp.o"
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eyeLike.dir/main.cpp.o -c /Users/janis/switchdrive/Private/Github/eyeLike/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/eyeLike.dir/main.cpp.o"
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eyeLike.dir/main.cpp.o -c /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src/main.cpp
 
 src/CMakeFiles/eyeLike.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eyeLike.dir/main.cpp.i"
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/janis/switchdrive/Private/Github/eyeLike/src/main.cpp > CMakeFiles/eyeLike.dir/main.cpp.i
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src/main.cpp > CMakeFiles/eyeLike.dir/main.cpp.i
 
 src/CMakeFiles/eyeLike.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eyeLike.dir/main.cpp.s"
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/janis/switchdrive/Private/Github/eyeLike/src/main.cpp -o CMakeFiles/eyeLike.dir/main.cpp.s
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src/main.cpp -o CMakeFiles/eyeLike.dir/main.cpp.s
 
 src/CMakeFiles/eyeLike.dir/findEyeCenter.cpp.o: src/CMakeFiles/eyeLike.dir/flags.make
 src/CMakeFiles/eyeLike.dir/findEyeCenter.cpp.o: ../src/findEyeCenter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/eyeLike.dir/findEyeCenter.cpp.o"
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eyeLike.dir/findEyeCenter.cpp.o -c /Users/janis/switchdrive/Private/Github/eyeLike/src/findEyeCenter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/eyeLike.dir/findEyeCenter.cpp.o"
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eyeLike.dir/findEyeCenter.cpp.o -c /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src/findEyeCenter.cpp
 
 src/CMakeFiles/eyeLike.dir/findEyeCenter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eyeLike.dir/findEyeCenter.cpp.i"
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/janis/switchdrive/Private/Github/eyeLike/src/findEyeCenter.cpp > CMakeFiles/eyeLike.dir/findEyeCenter.cpp.i
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src/findEyeCenter.cpp > CMakeFiles/eyeLike.dir/findEyeCenter.cpp.i
 
 src/CMakeFiles/eyeLike.dir/findEyeCenter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eyeLike.dir/findEyeCenter.cpp.s"
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/janis/switchdrive/Private/Github/eyeLike/src/findEyeCenter.cpp -o CMakeFiles/eyeLike.dir/findEyeCenter.cpp.s
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src/findEyeCenter.cpp -o CMakeFiles/eyeLike.dir/findEyeCenter.cpp.s
 
 src/CMakeFiles/eyeLike.dir/helpers.cpp.o: src/CMakeFiles/eyeLike.dir/flags.make
 src/CMakeFiles/eyeLike.dir/helpers.cpp.o: ../src/helpers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/eyeLike.dir/helpers.cpp.o"
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eyeLike.dir/helpers.cpp.o -c /Users/janis/switchdrive/Private/Github/eyeLike/src/helpers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/eyeLike.dir/helpers.cpp.o"
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eyeLike.dir/helpers.cpp.o -c /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src/helpers.cpp
 
 src/CMakeFiles/eyeLike.dir/helpers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eyeLike.dir/helpers.cpp.i"
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/janis/switchdrive/Private/Github/eyeLike/src/helpers.cpp > CMakeFiles/eyeLike.dir/helpers.cpp.i
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src/helpers.cpp > CMakeFiles/eyeLike.dir/helpers.cpp.i
 
 src/CMakeFiles/eyeLike.dir/helpers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eyeLike.dir/helpers.cpp.s"
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/janis/switchdrive/Private/Github/eyeLike/src/helpers.cpp -o CMakeFiles/eyeLike.dir/helpers.cpp.s
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src/helpers.cpp -o CMakeFiles/eyeLike.dir/helpers.cpp.s
 
 # Object files for target eyeLike
 eyeLike_OBJECTS = \
@@ -155,8 +155,8 @@ bin/eyeLike: /usr/local/lib/libopencv_photo.3.4.9.dylib
 bin/eyeLike: /usr/local/lib/libopencv_imgproc.3.4.9.dylib
 bin/eyeLike: /usr/local/lib/libopencv_core.3.4.9.dylib
 bin/eyeLike: src/CMakeFiles/eyeLike.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/eyeLike"
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/eyeLike.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/eyeLike"
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/eyeLike.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/eyeLike.dir/build: bin/eyeLike
@@ -164,10 +164,10 @@ src/CMakeFiles/eyeLike.dir/build: bin/eyeLike
 .PHONY : src/CMakeFiles/eyeLike.dir/build
 
 src/CMakeFiles/eyeLike.dir/clean:
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/eyeLike.dir/cmake_clean.cmake
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/eyeLike.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/eyeLike.dir/clean
 
 src/CMakeFiles/eyeLike.dir/depend:
-	cd /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/janis/switchdrive/Private/Github/eyeLike /Users/janis/switchdrive/Private/Github/eyeLike/src /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src /Users/janis/switchdrive/Private/Github/eyeLike/cmake-build-debug/src/CMakeFiles/eyeLike.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/marc/Documents/GitHub/eyecatcher/eyeLike /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src /Users/marc/Documents/GitHub/eyecatcher/eyeLike/cmake-build-debug/src/CMakeFiles/eyeLike.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/eyeLike.dir/depend
 

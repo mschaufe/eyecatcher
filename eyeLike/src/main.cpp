@@ -4,7 +4,7 @@
 
 #include <queue>
 #include <stdio.h>
-
+#include <iostream>
 
 #include "constants.h"
 #include "findEyeCenter.h"
@@ -20,6 +20,8 @@ cv::CascadeClassifier face_cascade;
 std::string main_window_name = "Capture - Face detection";
 std::string face_window_name = "Capture - Face";
 cv::Mat debugImage;
+
+float frameSize;
 
 /**
  * @function main
@@ -39,6 +41,7 @@ int main( int argc, const char** argv ) {
   cv::moveWindow("Left Eye", 10, 800);
 
 
+
   // I make an attempt at supporting both 2.x and 3.x OpenCV
 #if CV_MAJOR_VERSION < 3
   CvCapture* capture = cvCaptureFromCAM( 0 );
@@ -54,6 +57,7 @@ int main( int argc, const char** argv ) {
       // mirror it
       cv::flip(frame, frame, 1);
       frame.copyTo(debugImage);
+      frameSize =frame.size().height;
 
       // Apply the classifier to the frame
       if( !frame.empty() ) {
@@ -75,7 +79,6 @@ int main( int argc, const char** argv ) {
     }
   }
 
-
   return 0;
 }
 
@@ -87,15 +90,56 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
   int eye_region_width = face.width * (kEyePercentWidth/100.0);
   int eye_region_height = face.width * (kEyePercentHeight/100.0);
   int eye_region_top = face.height * (kEyePercentTop/100.0);
-  cv::Rect leftEyeRegion(face.width*(kEyePercentSide/100.0),
-                         eye_region_top,eye_region_width,eye_region_height);
-  cv::Rect rightEyeRegion(face.width - eye_region_width - face.width*(kEyePercentSide/100.0),
-                          eye_region_top,eye_region_width,eye_region_height);
+  cv::Rect leftEyeRegion(face.width*(kEyePercentSide/100.0),eye_region_top,eye_region_width,eye_region_height);
+  cv::Rect rightEyeRegion(face.width - eye_region_width - face.width*(kEyePercentSide/100.0),eye_region_top,eye_region_width,eye_region_height);
+
+  //std::cout << leftEyeRegion.size().width << " x " << leftEyeRegion.size().height << std::endl;
 
   //-- Find Eye Centers
   cv::Point leftPupil = findEyeCenter(faceROI,leftEyeRegion,"Left Eye");
   cv::Point rightPupil = findEyeCenter(faceROI,rightEyeRegion,"Right Eye");
-  // get corner regions
+  //std::cout << leftPupil.x << ", " << leftPupil.y << std::endl;
+
+  //scale factor
+  float scalefactor = face.height/frameSize;
+  float scaleDist = 2.5;
+
+  //left
+  int leftEyePos = 0;
+  if ( leftEyeRegion.size().width*4/9+(scaleDist*scalefactor) >= leftPupil.x){
+    leftEyePos = -1;
+  }
+  if (leftEyeRegion.size().width*4/9+(scaleDist*scalefactor) < leftPupil.x && leftEyeRegion.size().width*5/9-(scaleDist*scalefactor) > leftPupil.x){
+      leftEyePos = 0;
+  }
+  if (leftEyeRegion.size().width*5/9-(scaleDist*scalefactor) <= leftPupil.x){
+      leftEyePos = 1;
+  }
+
+  //right
+  int rightEyePos = 0;
+  if ( leftEyeRegion.size().width*4/9+(scaleDist*scalefactor) >= leftPupil.x){
+        leftEyePos = -1;
+  }
+  if (leftEyeRegion.size().width*4/9+(scaleDist*scalefactor) < leftPupil.x && leftEyeRegion.size().width*5/9-(scaleDist*scalefactor) > leftPupil.x){
+        leftEyePos = 0;
+  }
+  if (leftEyeRegion.size().width*5/9-(scaleDist*scalefactor) <= leftPupil.x){
+        leftEyePos = 1;
+  }
+
+  if (leftEyePos+rightEyePos<0){
+    std::cout << "left" << std::endl;
+  }
+  if (leftEyePos+rightEyePos==0){
+      std::cout << "straight" << std::endl;
+  }
+  if (leftEyePos+rightEyePos>0){
+      std::cout << "right" << std::endl;
+  }
+
+
+    // get corner regions
   cv::Rect leftRightCornerRegion(leftEyeRegion);
   leftRightCornerRegion.width -= leftPupil.x;
   leftRightCornerRegion.x += leftPupil.x;
@@ -144,13 +188,14 @@ void detectAndDisplay( cv::Mat frame ) {
   //-- Detect faces
   face_cascade.detectMultiScale( frame_gray, faces, 1.1, 2, 0|CV_HAAR_SCALE_IMAGE|CV_HAAR_FIND_BIGGEST_OBJECT, cv::Size(150, 150) );
 
-
   for( int i = 0; i < faces.size(); i++ )
   {
     rectangle(debugImage, faces[i], 1234);
+      //std::cout << faces[i].height << std::endl;
   }
   //-- Show what you got
   if (faces.size() > 0) {
     findEyes(frame_gray, faces[0]);
   }
+
 }
