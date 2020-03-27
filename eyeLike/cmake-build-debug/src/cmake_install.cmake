@@ -1,4 +1,4 @@
-# Install script for directory: /Users/janis/switchdrive/Private/Github/eyeLike/src
+# Install script for directory: /Users/marc/Documents/GitHub/eyecatcher/eyeLike/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
