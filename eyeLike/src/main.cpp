@@ -83,60 +83,114 @@ int main( int argc, const char** argv ) {
 }
 
 void findEyes(cv::Mat frame_gray, cv::Rect face) {
-  cv::Mat faceROI = frame_gray(face);
-  cv::Mat debugFace = faceROI;
+    cv::Mat faceROI = frame_gray(face);
+    cv::Mat debugFace = faceROI;
 
-  //-- Find eye regions and draw them
-  int eye_region_width = face.width * (kEyePercentWidth/100.0);
-  int eye_region_height = face.width * (kEyePercentHeight/100.0);
-  int eye_region_top = face.height * (kEyePercentTop/100.0);
-  cv::Rect leftEyeRegion(face.width*(kEyePercentSide/100.0),eye_region_top,eye_region_width,eye_region_height);
-  cv::Rect rightEyeRegion(face.width - eye_region_width - face.width*(kEyePercentSide/100.0),eye_region_top,eye_region_width,eye_region_height);
+    //-- Find eye regions and draw them
+    int eye_region_width = face.width * (kEyePercentWidth / 100.0);
+    int eye_region_height = face.width * (kEyePercentHeight / 100.0);
+    int eye_region_top = face.height * (kEyePercentTop / 100.0);
+    cv::Rect leftEyeRegion(face.width * (kEyePercentSide / 100.0), eye_region_top, eye_region_width, eye_region_height);
+    cv::Rect rightEyeRegion(face.width - eye_region_width - face.width * (kEyePercentSide / 100.0), eye_region_top,
+                            eye_region_width, eye_region_height);
 
-  //std::cout << leftEyeRegion.size().width << " x " << leftEyeRegion.size().height << std::endl;
+    //std::cout << leftEyeRegion.size().width << " x " << leftEyeRegion.size().height << std::endl;
 
-  //-- Find Eye Centers
-  cv::Point leftPupil = findEyeCenter(faceROI,leftEyeRegion,"Left Eye");
-  cv::Point rightPupil = findEyeCenter(faceROI,rightEyeRegion,"Right Eye");
-  //std::cout << leftPupil.x << ", " << leftPupil.y << std::endl;
+    //-- Find Eye Centers
+    cv::Point leftPupil = findEyeCenter(faceROI, leftEyeRegion, "Left Eye");
+    cv::Point rightPupil = findEyeCenter(faceROI, rightEyeRegion, "Right Eye");
+    //std::cout << leftPupil.x << ", " << leftPupil.y << std::endl;
 
-  //scale factor
-  float scalefactor = face.height/frameSize;
-  float scaleDist = 2.5;
+    //scale factor
+    float scalefactor = face.height / frameSize;
+    float scaleDist = 2.5;
 
-  //left
-  int leftEyePos = 0;
-  if ( leftEyeRegion.size().width*4/9+(scaleDist*scalefactor) >= leftPupil.x){
-    leftEyePos = -1;
-  }
-  if (leftEyeRegion.size().width*4/9+(scaleDist*scalefactor) < leftPupil.x && leftEyeRegion.size().width*5/9-(scaleDist*scalefactor) > leftPupil.x){
-      leftEyePos = 0;
-  }
-  if (leftEyeRegion.size().width*5/9-(scaleDist*scalefactor) <= leftPupil.x){
-      leftEyePos = 1;
-  }
+    //left
+    int leftEyePosX = 0;
+    if (leftEyeRegion.size().width * 4 / 9 + (scaleDist * scalefactor) >= leftPupil.x) {
+        leftEyePosX = -1;
+    }
+    if (leftEyeRegion.size().width * 4 / 9 + (scaleDist * scalefactor) < leftPupil.x &&
+        leftEyeRegion.size().width * 5 / 9 - (scaleDist * scalefactor) > leftPupil.x) {
+        leftEyePosX = 0;
+    }
+    if (leftEyeRegion.size().width * 5 / 9 - (scaleDist * scalefactor) <= leftPupil.x) {
+        leftEyePosX = 1;
+    }
+    int leftEyePosY = 0;
+    if (leftEyeRegion.size().height * 7 / 15 + (scaleDist * scalefactor) >= leftPupil.y) {
+        leftEyePosY = -1;
+    }
+    if (leftEyeRegion.size().height * 7 / 15 + (scaleDist * scalefactor) < leftPupil.y &&
+        leftEyeRegion.size().height * 8 / 15 - (scaleDist * scalefactor) > leftPupil.y) {
+        leftEyePosY = 0;
+    }
+    if (leftEyeRegion.size().height * 8 / 15 - (scaleDist * scalefactor) <= leftPupil.y) {
+        leftEyePosY = 1;
+    }
 
-  //right
-  int rightEyePos = 0;
-  if ( leftEyeRegion.size().width*4/9+(scaleDist*scalefactor) >= leftPupil.x){
-        leftEyePos = -1;
-  }
-  if (leftEyeRegion.size().width*4/9+(scaleDist*scalefactor) < leftPupil.x && leftEyeRegion.size().width*5/9-(scaleDist*scalefactor) > leftPupil.x){
-        leftEyePos = 0;
-  }
-  if (leftEyeRegion.size().width*5/9-(scaleDist*scalefactor) <= leftPupil.x){
-        leftEyePos = 1;
-  }
+    //right
+    int rightEyePosX = 0;
+    if (leftEyeRegion.size().width * 4 / 9 + (scaleDist * scalefactor) >= leftPupil.x) {
+        rightEyePosX = -1;
+    }
+    if (leftEyeRegion.size().width * 4 / 9 + (scaleDist * scalefactor) < leftPupil.x &&
+        leftEyeRegion.size().width * 5 / 9 - (scaleDist * scalefactor) > leftPupil.x) {
+        rightEyePosX = 0;
+    }
+    if (leftEyeRegion.size().width * 5 / 9 - (scaleDist * scalefactor) <= leftPupil.x) {
+        rightEyePosX = 1;
+    }
+    int rightEyePosY = 0;
+    if (leftEyeRegion.size().height * 7 / 15 + (scaleDist * scalefactor) >= leftPupil.y) {
+        rightEyePosY = -1;
+    }
+    if (leftEyeRegion.size().height * 7 / 15 + (scaleDist * scalefactor) < leftPupil.y &&
+        leftEyeRegion.size().height * 8 / 15 - (scaleDist * scalefactor) > leftPupil.y) {
+        rightEyePosY = 0;
+    }
+    if (leftEyeRegion.size().height * 8 / 15 - (scaleDist * scalefactor) <= leftPupil.y) {
+        rightEyePosY = 1;
+    }
 
-  if (leftEyePos+rightEyePos<0){
-    std::cout << "left" << std::endl;
-  }
-  if (leftEyePos+rightEyePos==0){
-      std::cout << "straight" << std::endl;
-  }
-  if (leftEyePos+rightEyePos>0){
-      std::cout << "right" << std::endl;
-  }
+    // top left
+    if (leftEyePosX+rightEyePosX<0 && leftEyePosY+rightEyePosY<0){
+        std::cout << "top left" << std::endl;
+    }
+    // top
+    if (leftEyePosX+rightEyePosX==0 && leftEyePosY+rightEyePosY<0){
+        std::cout << "top" << std::endl;
+    }
+    // top right
+    if (leftEyePosX+rightEyePosX>0 && leftEyePosY+rightEyePosY<0){
+        std::cout << "top right" << std::endl;
+    }
+
+    // left
+    if (leftEyePosX+rightEyePosX<0 && leftEyePosY+rightEyePosY==0){
+        std::cout << "left" << std::endl;
+    }
+    // center
+    if (leftEyePosX+rightEyePosX==0 && leftEyePosY+rightEyePosY==0){
+        std::cout << "center" << std::endl;
+    }
+    // right
+    if (leftEyePosX+rightEyePosX>0 && leftEyePosY+rightEyePosY==0){
+        std::cout << "right" << std::endl;
+    }
+
+    // bottom left
+    if (leftEyePosX+rightEyePosX<0 && leftEyePosY+rightEyePosY>0){
+        std::cout << "bottom left" << std::endl;
+    }
+    // bottom
+    if (leftEyePosX+rightEyePosX==0 && leftEyePosY+rightEyePosY>0){
+        std::cout << "bottom" << std::endl;
+    }
+    // bottom right
+    if (leftEyePosX+rightEyePosX>0 && leftEyePosY+rightEyePosY>0){
+        std::cout << "bottom right" << std::endl;
+    }
 
 
     // get corner regions
